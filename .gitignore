@@ -1,0 +1,4 @@
+# Valores reais de ambiente ficam fora do git; só o .env.example é versionado.
+.env
+.env.*
+!.env.example
