@@ -64,3 +64,7 @@ docker compose up -d --wait postgres backend
 - No compose, o cookie de sessão sai **sem** a flag `Secure` (`SESSION_COOKIE_SECURE=false`), porque o stack local é HTTP. Em produção ela fica ligada.
 - O volume `centavo-pgdata` tem o mesmo nome (e o mesmo projeto `centavo`) do compose antigo, então os dados de dev continuam. Ele foi criado com as credenciais do `.env`: mantenha as mesmas.
 - Os testes não usam este banco: o backend sobe o próprio Postgres pelo Testcontainers.
+
+## Mudanças neste repositório
+
+Nada entra direto na `main`: cada demanda vira uma issue, uma branch e um PR, e quem faz o merge é o Geberson. O passo a passo está em [`centavo-docs/processo/fluxo-de-trabalho.md`](https://github.com/Geberson2016/centavo-docs/blob/main/processo/fluxo-de-trabalho.md).
